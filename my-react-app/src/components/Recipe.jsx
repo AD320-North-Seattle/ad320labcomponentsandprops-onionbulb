@@ -1,6 +1,7 @@
 import Ingredient from './Ingredient.jsx'
 import Instruction from './Instructions.jsx'
 import optionalGlaze from './OptionalGlaze.jsx'
+import getImage from './Image.jsx'
 
 /**
  * Creates a recipe
@@ -9,10 +10,12 @@ import optionalGlaze from './OptionalGlaze.jsx'
  */
 function Recipe({recipe}) {
     const optionalGlazeDiv = optionalGlaze({recipe})
+    const imgSrc = getImage({recipe})
     return (
-        <>
+        <>  
             <div className={recipe.name}>
-                <h2>{recipe.name}</h2>
+                <h1>{recipe.name}</h1>
+                {imgSrc}
 
                 <div className="Ingredients">
                     <h3>Ingredients</h3>

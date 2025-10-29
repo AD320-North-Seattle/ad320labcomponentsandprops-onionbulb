@@ -5,21 +5,12 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #603C14;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
@@ -33,6 +24,14 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 button {
@@ -70,10 +69,39 @@ button:focus-visible {
 hr {
   border-style: solid;
   border-width: 3px;
+  color:#F3BC2E;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .dotted-line {
   border-style: dotted;
   border-top: 0px;
   border-width: 5px;
+}
+
+a {
+  color: #D45B12;
+}
+
+a:hover {
+  color:#F3BC2E;
+}
+
+ul, ol {
+  font-size: 20px;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.Ingredients, .Instructions {
+  justify-content: left;
+  align-items: left;
+  text-align: left;
 }

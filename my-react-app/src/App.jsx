@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+      <h1>Ix's Autumn Recipes</h1>
       <RecipeContainer recipes={recipes}/>
     </>
   )
