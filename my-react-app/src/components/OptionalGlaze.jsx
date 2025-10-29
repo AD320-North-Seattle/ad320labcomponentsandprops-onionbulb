@@ -15,7 +15,9 @@ function optionalGlaze({recipe}) {
             <h2>Optional - {glazeName}</h2>
             <div className="Ingredients">
                 <h3>Ingredients</h3>
-                {recipe.optionalGlaze.ingredients.map(ingredient => <Ingredient key={glazeName + " " + ingredient} ingredient={ingredient} />)}
+                <ul>
+                    {recipe.optionalGlaze.ingredients.map(ingredient => <Ingredient key={glazeName + " " + ingredient} ingredient={ingredient} />)}
+                </ul>   
             </div>
 
             <div className={"Instructions"}>
